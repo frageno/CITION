@@ -1,0 +1,12 @@
+// IMPORT DEFAULT FONT FROM GOOGLE FONTS
+@import '../settings/colors';
+@import '../settings/typography';
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+
+$body-background: $white !default;
+$body-font-family: 'DM Sans', sans-serif !default;
+$global-weight-normal: 400 !default;
+$global-lineheight: 1.5 !default;
+$body-font-color: $text-color !default;
+$body-font-size: $font-size-1 !default;

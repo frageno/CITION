@@ -1,0 +1,16 @@
+html,body{
+    overflow-x: hidden;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: $body-font-size;
+}
+
+body {
+    background: $body-background;
+    font-family: $body-font-family;
+    color:$body-font-color;
+    line-height: $global-lineheight;
+    font-weight: $global-weight-normal;
+}
