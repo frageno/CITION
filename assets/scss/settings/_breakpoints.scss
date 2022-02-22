@@ -1,6 +1,4 @@
-$breakpoins: (
-    small:0,
-    medium:640px,
-    large:1024px,
-    xlarge:1170px,
-);
+$screen-sm-min: 576px;
+$screen-md-min: 767px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1170px;

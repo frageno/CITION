@@ -1,0 +1,33 @@
+.u-margin{
+
+    &__my-1{
+        margin:0.625rem 0; // 10px
+    }
+    &__my-2{
+        margin:1.25rem 0; // 20px
+    }
+    &__my-3{
+        margin:1.85rem 0; // 30px
+    }
+    &__my-4{
+        margin:2.5rem 0; // 40px
+    }
+    &__my-5{
+        margin:3.125rem 0; // 50px
+    }
+    &__mr-1{
+        margin-right: 0.625rem; // 10px
+    }
+    &__mr-2{
+        margin-right: 0.938rem; // 15px
+    }
+    &__mr-3{
+        margin-right: 1.25rem; // 20px
+    }
+    &__mr-4{
+        margin-right: 1.563rem; // 25px
+    }
+    &__mr-5{
+        margin-right: 1.875rem; // 30px
+    }
+}

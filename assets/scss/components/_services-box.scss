@@ -1,0 +1,61 @@
+.c-services-box {
+    background: $white;
+    box-shadow: $shadow-primary;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    transition: ease-out .4s;
+    margin-bottom:30px;
+
+    &:hover{
+        transform: translateY(-10px);
+    }
+
+    &__bg{
+        background: $bg-light;
+        padding-bottom: 70px;
+
+        @include lg {
+            border-radius: 150px 0 150px 0;
+        }
+        @include xl {   
+            border-radius: 250px 0 250px 0;
+        }
+    }
+
+    img {
+        max-width: 82px;
+        height: 82px;
+    }
+
+    &__title {
+        padding:15px 0;      
+    }
+
+    &__desc{
+        margin-bottom: 10px;
+    }
+
+    @include lg {
+        display: flex;
+        flex-direction: row;
+
+        &__image{
+            margin-left:15px;
+        }
+
+        &__content{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            margin-left: 25px;
+        }
+    }
+
+    &--second {
+        justify-content: flex-start;
+    }
+}

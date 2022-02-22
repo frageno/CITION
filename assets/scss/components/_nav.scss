@@ -1,0 +1,204 @@
+.c-nav{
+    padding: 0;
+    margin: 0;
+    position: relative;
+
+    @include lg {
+        max-width: 1170px;
+        width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    @media (min-width:992px) and (max-width:1170px) {
+        max-width: 100%;
+        width: 100%;
+        margin:0 15px;
+
+    }
+
+    ul {
+        max-width: 100%;
+        padding: 30px 0;
+        // min-height: 100vh;
+        // overflow: hidden;
+        background-color: $black;
+        text-align: center;
+        list-style-type:none;
+
+        @include lg {
+            display:flex;
+            background-color: transparent;
+        }
+    }
+
+    &__navigation {
+        width:100%;
+        opacity: 0;
+        transform: translateY(-200px);
+        transition: ease-out .6s;
+
+        @include lg {
+            display: flex;
+            justify-content: flex-end;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (min-width:992px) and (max-width:1170px){
+            margin-right:30px;
+        }
+    }
+
+    &__active {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    &__item {
+        
+        padding: 20px;
+        text-transform: uppercase;
+
+            @include lg {
+                &:last-child{
+                    padding-right:0px;
+                }
+            }
+        
+
+
+        a {
+            color:$white;
+            font-weight: 700;
+
+            @include lg {
+                color:$secondary;
+                transition: ease-out .4s;
+
+
+                &:hover{
+                    color:$primary;
+                }
+            }
+        }
+    }
+
+    &__logo-desktop{
+        display:none;
+
+        @include lg {
+            display: block;
+            margin:30px 0;
+        }
+    }
+
+    &__logo{
+        display:block;
+        margin:20px 0 10px;
+
+        @include lg {
+            display:none;
+        }
+
+        img {
+            min-height: 80px;
+        }
+    }
+
+    &__hamburger{
+        position: absolute;
+        top:20px;
+        right:15px;
+    }
+
+    &__hamburger-line{
+        display: block;
+        width:25px;
+        height:3px;
+        margin:5px;
+        background-color: $primary;
+        transition: ease-out .4s;
+
+        @include lg {
+            display: none;
+        }
+    }
+
+    
+    .c-nav__change > .c-nav__hamburger-line {
+        &:first-child{
+            transform: rotate(-45deg) translate(-5px, 6px);    
+        }
+        &:nth-child(2){
+            opacity: 0;
+        }
+        &:nth-child(3){
+            transform: rotate(45deg) translate(-5px, -6px); 
+        }
+    }
+
+    /* TOPBAR STYLES */
+
+    &__top-bar{
+        display:none;
+
+        @include lg {
+
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid $border-line;
+            padding: 5px 0 10px 0; 
+        }
+        @include xl {
+            .col-12{
+                margin: 0!important;
+                padding: 0!important;
+            }
+        }
+
+    }
+    &__top-bar-icons-box{
+        display: flex;
+        align-items: center;
+    }
+    &__top-bar-social{
+        font-size:26px;
+        margin-left:10px;
+        color:$primary;
+        transition: ease-out .4s;
+    }
+    &__top-bar-icons-content{
+        display: flex;
+        align-items: center;
+
+    }
+    &__top-bar-left{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    &__top-bar-label{
+        margin-left:8px;
+        font-weight: 400;
+        font-size:16px;
+
+        a {
+            color:$text-color;
+            transition: ease-out .4s;
+        }
+
+        a:hover{
+            color:$primary;
+        }
+    }
+    &__brand {
+        max-width:150px;
+    }
+    
+}
+

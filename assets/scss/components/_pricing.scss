@@ -1,0 +1,58 @@
+.pricing-table {
+    width: 100%;
+    padding: 45px 25px 55px;
+    background: $white;
+    box-shadow: $shadow-primary;
+    border-radius:0 50px 0 0;
+    border-bottom: 2px solid $primary;
+    margin:20px 0;
+
+
+    &__body {
+        max-width: 100%;
+    }
+
+    &__heading{
+        margin-bottom: 15px;       
+    }
+
+    &__price{
+        color:$primary;
+        font-weight: 700;
+        font-size: $font-size-5;
+        padding: 25px 0;
+        border-bottom: 1px solid $litte-gray;
+    }
+
+    &__peroid{
+        color:$secondary;
+        font-weight: 500;
+        font-size: $font-size-3;
+    }
+
+    &__list {
+        padding-bottom: 25px;
+        margin:20px 0;
+        ul {
+            list-style-type: none;
+        }
+    }
+    &__item{
+        display: flex;  
+        color:$secondary;
+        margin:10px 0;    
+    }
+    &__item::before{
+       content: '';
+       background: url('/assets/img/check-icon.png');
+       display: flex;
+       width:26px;
+       height: 26px;
+       margin-right:8px;
+       
+
+    }
+
+    
+}
+

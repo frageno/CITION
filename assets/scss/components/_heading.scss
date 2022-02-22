@@ -1,0 +1,30 @@
+.c-heading{
+
+        padding: 70px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+
+
+    &__title{
+        padding:25px 0;
+        font-size:$font-size-5;
+    } 
+
+    &__subtitle{
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+
+        &::before {
+            content:'';
+            width:35px;
+            height: 3px;
+            background: $primary;
+            display: block;
+            margin-right: 15px;
+        }
+    }
+}
