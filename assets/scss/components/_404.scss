@@ -1,0 +1,29 @@
+.c-404 {
+    padding: 40px 0 100px 0;
+
+    @include lg {
+        padding: 100px 0 160px 0;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title{
+        color:$primary;
+        margin: 10px 0;
+        font-size: 100px;
+        line-height: 120px;
+
+        @include lg {
+            font-size: 156px;
+            line-height: 160px;
+        }
+    }
+    &__subtitle, &__text {
+        margin-bottom: 30px;
+    }
+}

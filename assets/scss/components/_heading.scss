@@ -2,11 +2,13 @@
 
         padding: 70px 15px;
         display: flex;
+        flex-direction: column;
+        
+    &--center {
         align-items: center;
         justify-content: center;
-        flex-direction: column;
         text-align: center;
-
+    }
 
     &__title{
         padding:25px 0;
@@ -17,6 +19,7 @@
         font-weight: 500;
         display: flex;
         align-items: center;
+        font-size:18px;
 
         &::before {
             content:'';
