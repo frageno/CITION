@@ -1,0 +1,7 @@
+input {
+    &:focus {
+        border:1px solid $primary;
+        outline: none;
+        box-shadow: none;
+    }
+}

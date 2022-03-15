@@ -1,13 +1,22 @@
 .c-contact{
+    padding: 45px 0 30px 0;
 
+    @include lg {
+        padding:70px 0 100px 0;
+    }
+    &__left{
+        padding-right: 20px;
+    }
     &__details{
         display: flex;
+        flex-direction: column;
         width: 100%;
     }
 
     &__details-box{
         display: flex;
         align-items: center;
+        margin:10px 0;
     }
 
     &__icon{
@@ -19,9 +28,10 @@
         height: 54px;
         width: 54px;
 
+
         img {
-            width: 36px;
-            height: 36px;
+            width: 32px;
+            height: 32px;
             display:block;
         }
     }
@@ -35,5 +45,43 @@
         font-size: 20px;
         font-weight: 700;
         color:$secondary;
+
+        a {
+            transition:all .4s;
+            &:hover{
+                color:$primary;
+            }
+        }
+    }
+
+    &__form{
+        background-color: $white;
+        box-shadow:$shadow-primary;
+        border-radius: 50px 0 50px 0;
+        padding:35px 35px 50px 35px;
+    }
+    &__form-input{
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border:none;
+        background:rgba(32, 49, 77, 0.05);
+        padding:10px 15px;
+
+        &:focus {
+            border:none;
+            outline: none;
+            box-shadow: 0 0 30px rgba(0,0,0,.10);
+            background:rgba(32, 49, 77, 0.05);
+        }
+
+        &::placeholder{
+            color:rgba(32, 49, 77, 0.3);
+        }
+    }
+    &__map {
+        padding: 0;
+        iframe {
+        width:100%;
+        }
     }
 }
