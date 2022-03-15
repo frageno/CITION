@@ -2,6 +2,7 @@
 
 const gulp = require('gulp');
 const sass = require('gulp-dart-sass');
+const browserSync = require('browser-sync').create();
 
 
 gulp.task('sass', function(){
@@ -13,5 +14,9 @@ gulp.task('sass', function(){
 gulp.task('watch', function(){
     gulp.watch('./assets/scss/**/*.scss', gulp.series(['sass']));
 });
+
+
+
+
 
 

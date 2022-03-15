@@ -91,6 +91,13 @@
         }
     }
 
+    &__item-active{
+
+        a{
+        color:$primary;
+        }
+    }
+
     &__logo-desktop{
         display:none;
 
