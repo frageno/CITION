@@ -1,5 +1,4 @@
 .c-contact{
-    padding: 45px 0 30px 0;
 
     @include lg {
         padding:70px 0 100px 0;
@@ -59,6 +58,7 @@
         box-shadow:$shadow-primary;
         border-radius: 50px 0 50px 0;
         padding:35px 35px 50px 35px;
+        margin:75px 0;
     }
     &__form-input{
         margin-bottom: 15px;
