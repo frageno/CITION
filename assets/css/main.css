@@ -11976,6 +11976,13 @@ input:focus {
 .c-heading__title {
   padding: 25px 0;
   font-size: 1.85rem;
+  line-height: 2rem;
+}
+.c-heading__title a {
+  transition: all 0.4s;
+}
+.c-heading__title a:hover {
+  color: #FF2442;
 }
 .c-heading__subtitle {
   font-weight: 500;
@@ -12123,7 +12130,7 @@ input:focus {
 .c-contact__form-input:focus {
   border: none;
   outline: none;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  box-shadow: none;
   background: rgba(32, 49, 77, 0.05);
 }
 .c-contact__form-input::placeholder {
@@ -12134,6 +12141,104 @@ input:focus {
 }
 .c-contact__map iframe {
   width: 100%;
+}
+
+.c-blog {
+  padding: 45px 0;
+}
+.c-blog__box {
+  width: 100%;
+}
+.c-blog__image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+.c-blog__image img {
+  border-radius: 25px 0 0 0;
+  width: 100%;
+}
+@media (min-width: 767px) {
+  .c-blog__image img {
+    border-radius: 50px 0 0 0;
+  }
+}
+@media (min-width: 992px) {
+  .c-blog__image img {
+    border-radius: 100px 0 0 0;
+  }
+}
+.c-blog__post-category {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #FF2442;
+  padding: 5px 25px;
+  border-radius: 25px 0 25px 0;
+  transition: all 0.4s;
+  font-weight: 700;
+}
+@media (min-width: 767px) {
+  .c-blog__post-category {
+    padding: 10px 50px;
+  }
+}
+.c-blog__post-category:hover {
+  background: #20314D;
+}
+.c-blog__post-category a {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.c-blog__post-content {
+  background: #ffffff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 25px 0;
+  padding: 20px;
+}
+.c-blog__post-meta {
+  margin: 15px 0 35px 0;
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 767px) {
+  .c-blog__post-meta {
+    margin: 0 0 35px 0;
+  }
+}
+.c-blog__date, .c-blog__author {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.c-blog__date::before {
+  content: "";
+  background-image: url(/assets/img/icons/calendar.svg);
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+.c-blog__author::before {
+  content: "";
+  background-image: url(/assets/img/icons/user.svg);
+  display: block;
+  width: 22px;
+  height: 22px;
+  margin-right: 5px;
+}
+.c-blog__author a {
+  color: #B3B8C2;
+  transition: all 0.4s;
+}
+.c-blog__author a:hover {
+  color: #FF2442;
+}
+.c-blog__read-more {
+  margin: 40px 0;
 }
 
 .c-footer {
