@@ -1,7 +1,8 @@
-input {
+input,button {
+    border:none;
+    outline:none;
     &:focus {
-        border:1px solid $primary;
+        border:none;
         outline: none;
-        box-shadow: none;
     }
 }
