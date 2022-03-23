@@ -11495,6 +11495,7 @@ p {
   font-size: inherit;
   line-height: 1.5;
   font-weight: 400;
+  margin-bottom: 20px;
 }
 
 a {
@@ -12040,6 +12041,48 @@ input:focus, button:focus {
   color: #ffffff;
 }
 
+.c-form__form {
+  background-color: #ffffff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  border-radius: 50px 0 50px 0;
+  padding: 35px 35px 50px 35px;
+  margin: 75px 0;
+}
+.c-form__input {
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+}
+.c-form__input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #FF2442;
+}
+.c-form__input::placeholder {
+  color: rgba(32, 49, 77, 0.3);
+}
+.c-form__input--contact {
+  background: rgba(32, 49, 77, 0.05);
+}
+.c-form__input--contact:focus {
+  box-shadow: none;
+  background: rgba(32, 49, 77, 0.05);
+}
+.c-form__input--form {
+  background: transparent;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+.c-form__input--form:focus {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 767px) {
+  .c-form__form-group {
+    padding-right: 10px;
+  }
+}
+
 .c-404 {
   padding: 40px 0 100px 0;
 }
@@ -12117,29 +12160,6 @@ input:focus, button:focus {
 .c-contact__info a:hover {
   color: #FF2442;
 }
-.c-contact__form {
-  background-color: #ffffff;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-  border-radius: 50px 0 50px 0;
-  padding: 35px 35px 50px 35px;
-  margin: 75px 0;
-}
-.c-contact__form-input {
-  margin-bottom: 15px;
-  border-radius: 5px;
-  border: none;
-  background: rgba(32, 49, 77, 0.05);
-  padding: 10px 15px;
-}
-.c-contact__form-input:focus {
-  border: none;
-  outline: none;
-  box-shadow: none;
-  background: rgba(32, 49, 77, 0.05);
-}
-.c-contact__form-input::placeholder {
-  color: rgba(32, 49, 77, 0.3);
-}
 .c-contact__map {
   padding: 0;
 }
@@ -12149,9 +12169,19 @@ input:focus, button:focus {
 
 .c-blog {
   padding: 45px 0;
+  /* SINGLE POST */
+}
+.c-blog--single {
+  padding-bottom: 60px;
+}
+@media (min-width: 767px) {
+  .c-blog--single {
+    padding: 100px 0 160px 0;
+  }
 }
 .c-blog__box {
   width: 100%;
+  position: relative;
 }
 @media (min-width: 992px) {
   .c-blog__box {
@@ -12205,6 +12235,11 @@ input:focus, button:focus {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   border-radius: 0 0 25px 0;
   padding: 20px;
+}
+@media (min-width: 767px) {
+  .c-blog__post-content {
+    padding: 20px 35px;
+  }
 }
 .c-blog__post-meta {
   margin: 15px 0 35px 0;
@@ -12403,6 +12438,39 @@ input:focus, button:focus {
 .c-blog__pagination-page-link:hover {
   background: #20314D;
   color: #ffffff;
+}
+@media (min-width: 767px) {
+  .c-blog__single {
+    padding: 0 60px;
+  }
+}
+.c-blog__under-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0 20px 0;
+}
+@media (min-width: 767px) {
+  .c-blog__comment-form {
+    padding: 0 100px;
+  }
+}
+.c-blog__category-item {
+  color: #FF2442;
+  transition: all 0.4s;
+  font-weight: 700;
+}
+@media (min-width: 992px) {
+  .c-blog__dots {
+    background: url("../img/dots.png") center center no-repeat;
+    background-size: cover;
+    width: 320px;
+    height: 284px;
+    position: absolute;
+    top: 65%;
+    left: -5px;
+    z-index: -1;
+  }
 }
 
 .c-footer {

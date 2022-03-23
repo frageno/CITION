@@ -1,9 +1,18 @@
 .c-blog {
     padding: 45px 0;
 
+    &--single {
+        padding-bottom: 60px;
+        @include md {
+            padding:100px 0 160px 0;
+        }
+        
+    }
+    
+
     &__box {
         width:100%;
-
+        position: relative;
         @include lg {
             padding-right: 40px;
         }
@@ -58,6 +67,10 @@
         box-shadow:$shadow-primary;
         border-radius:0 0 25px 0;
         padding:20px;
+
+        @include md {
+            padding:20px 35px;
+        }
     }
     &__post-meta{
         margin:15px 0 35px 0;
@@ -281,6 +294,51 @@
         &:hover{
             background:$secondary;
             color:$white;
+        }
+    }
+
+    /* SINGLE POST */
+    &__single {
+
+            @include md {
+                padding:0 60px;
+            }
+        
+    }
+
+    &__under-post{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin:40px 0 20px 0;
+    }
+
+    &__comment-form{
+
+        @include md {
+            padding:0 100px;
+        }
+    }
+
+    &__category-item {
+        color:$primary;
+        transition: all .4s;
+        font-weight: 700;
+    }
+
+    
+
+    &__dots{
+
+        @include lg {
+            background:url('../img/dots.png')center center no-repeat;
+            background-size:cover;
+            width:320px;
+            height:284px;
+            position:absolute;
+            top: 65%;
+            left: -5px;
+            z-index: -1;
         }
     }
 }
