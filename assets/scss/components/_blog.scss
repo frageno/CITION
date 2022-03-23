@@ -3,6 +3,10 @@
 
     &__box {
         width:100%;
+
+        @include lg {
+            padding-right: 40px;
+        }
     }
 
     &__image{
@@ -258,6 +262,26 @@
         line-height: 22px;
         font-weight: 700;
         transition: all .4s;
+    }
+
+    &__pagination-page-link{
+        display: block;
+        font-size: 18px;
+        font-weight: 700;
+        background: $primary;
+        color:$white;
+        padding: 10px 15px;
+        border-radius:10px 0 10px 0;
+        margin-right: 5px;
+        transition:all .4s;
+        max-width: 100%;
+        width: 45px;
+        text-align: center;
+
+        &:hover{
+            background:$secondary;
+            color:$white;
+        }
     }
 }
 

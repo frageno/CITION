@@ -11646,6 +11646,7 @@ input:focus, button:focus {
   padding: 0;
   margin: 0;
   position: relative;
+  z-index: 9;
   /* TOPBAR STYLES */
 }
 @media (min-width: 992px) {
@@ -12152,6 +12153,11 @@ input:focus, button:focus {
 .c-blog__box {
   width: 100%;
 }
+@media (min-width: 992px) {
+  .c-blog__box {
+    padding-right: 40px;
+  }
+}
 .c-blog__image {
   position: relative;
   width: 100%;
@@ -12380,6 +12386,24 @@ input:focus, button:focus {
   font-weight: 700;
   transition: all 0.4s;
 }
+.c-blog__pagination-page-link {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  background: #FF2442;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 10px 0 10px 0;
+  margin-right: 5px;
+  transition: all 0.4s;
+  max-width: 100%;
+  width: 45px;
+  text-align: center;
+}
+.c-blog__pagination-page-link:hover {
+  background: #20314D;
+  color: #ffffff;
+}
 
 .c-footer {
   background-color: #05132B;
@@ -12555,3 +12579,4 @@ input:focus, button:focus {
 .c-footer__copyright-link a:hover {
   color: #ffffff;
 }
+/*# sourceMappingURL=main.css.map */
