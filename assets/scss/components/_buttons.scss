@@ -27,4 +27,13 @@
                 color:$white;
             }
         }
+
+        &__white{
+            background: $white;
+            color:$secondary;
+
+            &:hover{
+                color:$primary;
+            }
+        }
 }

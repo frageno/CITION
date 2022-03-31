@@ -1,0 +1,64 @@
+.c-faq{
+    padding: 45px 0 75px 0;
+
+    @include lg {
+        padding: 45px 0 140px 0;
+    }
+    
+    &__box{
+        box-shadow: $shadow-primary;
+        background: $white;
+        padding: 50px 5px;
+        border-radius:30px 0 30px 0;
+
+        @include md {
+            border-radius:60px 0 60px 0;   
+            padding: 50px;
+        }
+    }
+
+    &__btn{
+        background:transparent;
+        color:$secondary;
+        font-weight: 700;
+        font-size: 20px;
+
+        &:focus, &:active, &:visited{
+            border:none;
+            outline: none;
+            box-shadow: none;
+            background-color:transparent!important;
+        }
+
+        &::before{
+            content:"";
+            display: block;
+            width: 20px;
+            height: 3px;
+            background: $primary;
+            margin-right:15px;
+        }
+
+        &::after{
+            background-image:url(../img/icons/faq-arrow.svg);
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 44px;
+            height: 44px;
+        }
+
+        &:not(.collapsed)::after {
+            background-image: url(../img/icons/faq-arrow.svg);
+            transform: rotate(-180deg);
+        }
+
+    }
+
+    &__body{
+        padding-bottom:35px!important;
+    }
+}
+.accordion-button:not(.collapsed){
+    background-color:transparent!important;
+}

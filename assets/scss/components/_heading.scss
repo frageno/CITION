@@ -8,6 +8,10 @@
         align-items: center;
         justify-content: center;
         text-align: center;
+
+        p{
+            max-width: 800px;
+        }
     }
 
     &__title{
