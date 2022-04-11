@@ -1,0 +1,30 @@
+.c-quote{
+    padding-bottom: 40px;
+
+    @include md {
+        padding-bottom: 100px;
+    }
+    
+    &__video{
+        padding: 200px;
+        background: url(../img/quote.jpg)center center no-repeat;
+        background-size: cover;
+        box-shadow:inset 0 0 0 2000px rgba(32, 49, 77, 0.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__video-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__content{
+        max-width: 100%;
+
+        @include md {
+        max-width: 550px;
+        padding:0 35px;
+        }
+    }
+}

@@ -1,0 +1,114 @@
+.c-services-box {
+    background: $white;
+    box-shadow: $shadow-primary;
+
+    &--layout-1{
+        padding: 30px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        transition: ease-out .4s;
+        margin-bottom:30px;
+
+        &:hover{
+            transform: translateY(-10px);
+        }
+    }
+    &--layout-2{
+        position: relative;
+        margin-top:70px;
+
+        @include md {
+            margin-top:0;
+        }
+    }
+    &__row{
+        margin-top:0;
+        @include md {
+            margin-top:70px;
+        }
+    }
+
+
+    @include lg {
+        display: flex;
+        flex-direction: column;
+    }
+        &__image{
+            margin-left:15px;
+
+            &--absolute{
+                position: absolute;
+                top:-40px;
+                left:10px;
+            }
+        }
+
+        &__content{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            margin-left: 25px;
+
+            &--layout-2{
+                padding-top:50px;
+            }
+        }
+    
+
+
+    &__bg{
+        background: $bg-light;
+        padding-bottom: 70px;
+
+        @include lg {
+            border-radius: 150px 0 150px 0;
+        }
+        @include xl {   
+            border-radius: 250px 0 250px 0;
+        }
+    }
+
+    img {
+        max-width: 82px;
+        height: 82px;
+    }
+
+    &__title {
+        padding:15px 0;      
+    }
+
+    &__desc{
+        margin-bottom: 10px;
+    }
+
+    &__read-more{
+        color:$primary;
+        font-weight: 500;
+        margin:10px 0 25px 0;
+        display: flex;
+        align-items: center;
+        transition:all .4s;
+
+        &::after{
+            content:'';
+            display: block;
+            background: url('../img/icons/arrow-right.svg')center center no-repeat;
+            width: 15px;
+            height: 15px;
+            margin-left:5px;
+        }
+        &:hover{
+            color:$primary;
+            transform: translateX(5px);
+        }
+
+    }
+
+
+    &--second {
+        justify-content: flex-start;
+    }
+}
