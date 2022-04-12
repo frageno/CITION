@@ -1,5 +1,5 @@
 .u-margin{
-
+    
     &__my-1{
         margin:0.625rem 0; // 10px
     }
@@ -14,6 +14,21 @@
     }
     &__my-5{
         margin:3.125rem 0; // 50px
+    }
+    &__mb-1{
+        margin-bottom:0.625rem; // 10px
+    }
+    &__mb-2{
+        margin-bottom:1.25rem; // 20px
+    }
+    &__mb-3{
+        margin-bottom:1.85rem; // 30px
+    }
+    &__mb-4{
+        margin-bottom:2.5rem; // 40px
+    }
+    &__mb-5{
+        margin-bottom:3.125rem; // 50px
     }
     &__my-section{
         margin:45px 0 150px 0;
@@ -32,6 +47,21 @@
     }
     &__mr-5{
         margin-right: 1.875rem; // 30px
+    }
+    &__ml-1{
+        margin-left: 0.625rem; // 10px
+    }
+    &__ml-2{
+        margin-left: 0.938rem; // 15px
+    }
+    &__ml-3{
+        margin-left: 1.25rem; // 20px
+    }
+    &__ml-4{
+        margin-left: 1.563rem; // 25px
+    }
+    &__ml-5{
+        margin-left: 1.875rem; // 30px
     }
 }
 

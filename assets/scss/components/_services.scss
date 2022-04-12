@@ -56,7 +56,7 @@
                 padding-top:50px;
             }
         }
-    
+
 
 
     &__bg{
@@ -110,5 +110,111 @@
 
     &--second {
         justify-content: flex-start;
+    }
+
+
+
+    /* SINGLE SERVICE PAGE STYLES */
+
+    &__single {
+        padding:45px 0;
+
+        @include md {
+            padding: 100px 0;
+        }
+    }
+    &__single-image{
+        img {
+            border-radius: 0 0 50px 0;
+
+            @include md {
+                border-radius: 0 0 100px 0;
+            }
+        }
+    }
+    &__single-divider{
+        width: 80px;
+        height: 3px;
+        background-color: $primary;
+        margin-bottom: 25px;
+    }
+    &__single-icons{
+        margin-top: 50px;
+        .container {
+            padding:0;
+        }
+    }
+    &__single-icon{
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        background: $primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 25px 0 25px 0;
+
+        img {
+            width: 40px;
+            height: 40px;
+            display:block;
+        }
+    }
+    &__single-icons-wrapper{
+        margin-bottom: 40px;
+
+        @include md {
+            margin-bottom: 0px;
+        }
+    }
+    &__single-overview{
+        .container {
+            padding: 0;
+        }
+    }
+    &__single-categories{
+        ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    &__single-item{
+        background: $white;
+        border-radius: 25px 0 25px 0;
+        padding:15px 25px;
+        box-shadow: $shadow-primary;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: all .4s;
+
+        &:hover{
+            box-shadow:0 0 30px rgba(0,0,0,.20);
+            .c-services-box__single-link{
+                color:$primary;
+            }
+            .c-services-box__single-link-icon{
+                transform: translateX(5px);
+            }
+        }
+    }
+    &__single-link{
+        font-size: 18px;
+        font-weight: 500;
+        color:$secondary;
+        line-height: 24px;
+        transition: all .4s;
+    }
+    &__single-link-icon{
+        transition: all .4s;
+        &::after{
+            content:'';
+            background-image: url(../img/icons/arrow.svg);
+            display: block;
+            height: 20px;
+            width: 20px;
+        }
     }
 }
