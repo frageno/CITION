@@ -1,0 +1,49 @@
+.c-about {
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 999;
+        img {
+            border-radius: 100px 0 100px 0;
+        }
+    }
+
+    &__dots{
+        background:url('../img/dots.png')center center no-repeat;
+        background-size:cover;
+        width:320px;
+        height:284px;
+        position:absolute;
+        z-index: -1;
+    }
+
+    &__image-dots{
+
+        @include lg {
+            top:50%;
+            left: -35px;
+        }
+    }
+    &__whyus-dots{
+
+        @include lg {
+            top:-30px;
+            left: 230px;
+        }
+    }
+
+
+    &__left {
+
+        @include lg {
+            padding-left:50px;
+        }
+        
+    }
+
+    &__list-item{
+        font-weight: 500;
+    }
+}
