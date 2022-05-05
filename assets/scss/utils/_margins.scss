@@ -31,7 +31,11 @@
         margin-bottom:3.125rem; // 50px
     }
     &__my-section{
-        margin:45px 0 150px 0;
+        margin:45px 0 45px 0;
+      
+        @include lg {
+            margin:45px 0 150px 0;
+        }
     }
     &__mr-1{
         margin-right: 0.625rem; // 10px

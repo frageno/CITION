@@ -16,8 +16,12 @@
 
     &__title{
         padding:25px 0;
-        font-size:$font-size-5;
+        font-size:$font-size-4;
         line-height: 2.5rem;
+
+        @include md {
+            font-size:$font-size-5;
+        }
         a{
             transition:all .4s;
         }

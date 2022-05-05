@@ -7,7 +7,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
         text-align: center;
         transition: ease-out .4s;
         margin-bottom:30px;
@@ -34,7 +33,7 @@
 
     @include lg {
         display: flex;
-        flex-direction: column;
+        // flex-direction: column;
     }
         &__image{
             margin-left:15px;
