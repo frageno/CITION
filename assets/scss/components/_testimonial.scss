@@ -1,0 +1,39 @@
+.c-testimonials{
+
+    margin: 100px 0;
+
+    &__box{
+        box-shadow: $shadow-primary;
+        padding: 40px 50px;
+    }
+    &__user, &__info, &__arrows{
+        display: flex;
+        align-items: center;
+    }
+    &__user {
+        justify-content: space-between;
+        margin-top:25px;
+    }
+    &__desc{
+        margin-left:20px;
+    }
+    &__left{
+        margin-right:10px;
+    }
+    &__arrow {
+        img {
+            transition:all .4s;
+        }
+
+        &:hover {
+            img {
+                transform: translateY(-3px);
+            }
+        }
+    }
+    &__position{
+        color:$primary;
+        font-weight: 500;
+    }
+
+}
