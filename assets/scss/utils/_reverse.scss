@@ -1,0 +1,12 @@
+.u-reverse {
+
+    &__col {
+        display: flex;
+        flex-direction: column-reverse;
+
+        @include lg {
+            flex-direction: row;
+        }
+    }
+    
+}
