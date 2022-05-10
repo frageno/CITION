@@ -1,0 +1,75 @@
+.c-home {
+
+    &__icon-box{
+        display: flex;
+        align-items: center;
+
+        @include lg {
+            padding-right: 30px;
+        }
+    }
+
+    &__icon-box-icon {
+        margin-right: 25px;
+    }
+
+    &__icon-box-title{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    &__icon-box-text{
+        margin-bottom: 0;
+    }
+
+    &__video-box{
+        position: relative;
+        background: $primary;
+        border-radius: 50px 0 50px 0;
+        text-align: center;
+        padding: 50px 20px;
+
+        @include md {
+            text-align: left;
+        }
+
+        @include lg {
+            padding: 50px;
+            border-radius: 100px 0 100px 0;
+        }
+    }
+
+    &__video-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        @include md {
+            flex-direction: row;
+        }
+    }
+
+    &__video-icon{
+        margin-right: 40px;
+    }
+
+    &__video-text{
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 26px;
+        margin-bottom: 0;
+        color:$white;
+    }
+
+    &__services {
+        .col-12, .col-xs-12, .col-md-6, .col-lg-6, .col-xl-6{
+            padding:0!important;
+        }
+    }
+
+    &__services-heading{
+        padding-right:70px;
+    }
+
+}
