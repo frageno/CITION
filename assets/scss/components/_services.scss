@@ -102,7 +102,11 @@
     }
 
     &__title {
-        padding:15px 0;      
+        padding:15px 0;
+        
+        &--layout-3{
+            font-size:1.175rem;
+        }
     }
 
     &__desc{
