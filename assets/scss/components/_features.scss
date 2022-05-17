@@ -1,0 +1,81 @@
+.c-features {
+    margin-top: 250px;
+
+    &__image{
+        margin:-100px 0 50px 0;
+        position: relative;
+        z-index: 2;
+
+        img {
+            border-radius: 0 100px 0 100px;
+        }
+    }
+
+    &__icons {
+        padding-top: 30px;
+
+        @include md {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__icon-box{
+        display: flex;
+        align-items: center;
+        padding: 0 0 30px 0;
+
+        @include md {
+            padding: 0 0 30px 10px;
+        }
+    }
+
+    &__icon{
+        position: relative;
+        text-align: center;
+        width: 60px;
+        margin-right: 20px;
+    }
+
+    &__count {
+        span {
+            font-size: $font-size-3;
+            font-weight: 700;
+            line-height: $font-size-3;
+            color:$secondary;
+        }
+    }
+
+    &__label {
+        h6{
+            margin-bottom: 0;
+        }
+    }
+
+    &__dots{
+        background:url('../img/dots.png')center center no-repeat;
+        background-size:cover;
+        width:320px;
+        height:284px;
+        position:absolute;
+        z-index: -1;
+    }
+
+    &__dot-left{
+        bottom:-30px;
+        left:-30px;
+    }
+
+    &__dot-right{
+        top:0px;
+        right:-30px;
+            @include md {
+                top:-30px;
+                right:-30px;
+            }
+            @include lg {
+                top:30px;
+                right:-30px;
+            }
+    }
+}

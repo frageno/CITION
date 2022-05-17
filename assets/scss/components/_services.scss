@@ -27,7 +27,11 @@
     &--layout-3{
         position: relative;
         padding: 15px 10px;
-        margin-right: 10px;
+        margin:0 15px;
+
+        @include md {
+            margin:0 15px 0 0;
+        }
 
         .c-services-box__image img {
             max-width: 55px;
