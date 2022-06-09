@@ -26,7 +26,7 @@
         padding: 30px 0;
         // min-height: 100vh;
         // overflow: hidden;
-        background-color: $black;
+        background-color: $secondary;
         text-align: center;
         list-style-type:none;
 
@@ -110,24 +110,35 @@
         }
     }
 
+    &__mobile-header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include lg {
+            display: none;
+        }
+    }
+
     &__logo{
         display:block;
         margin:20px 0;
         padding-left:10px;
+        max-width: 40%;
 
         @include lg {
             display:none;
         }
 
         img {
-            width: 60%;
+            width: 100%;
         }
     }
 
     &__hamburger{
-        position: absolute;
-        top:20px;
-        right:15px;
+        max-width: 60%;
+        padding: 0 15px 0 0;
     }
 
     &__hamburger-line{
@@ -221,27 +232,42 @@
         transform: translateY(100px);
         position: absolute;
         background-color: $white;
-        min-width: 240px;
+        min-width: 100%;
         box-shadow: $shadow-primary;
         z-index: 99999!important;
         padding: 0!important;
         top:100%;
         transition: all .4s ease-in-out;
+
+        @include lg {
+            min-width: 240px;
+        }
+        
     }
 
     &__item-has-children{
         position: relative;
         display: flex;
         align-items:center;
+        justify-content: center;
+
         &::after {
             content: '';
-            background: url(../img/icons/down-arrow.svg);
+            background: url(../img/icons/down-arrow-white.svg);
             width: 12px;
             height: 12px;
-            margin-left: 3px;
+            margin-left: 10px;
             display: flex;
             transition: all .4s ease-in-out;
         }
+
+        @include lg {
+            &::after {
+                background: url(../img/icons/down-arrow.svg);
+                margin-left: 3px;
+            }
+        }
+        
 
         &:hover {
             .c-nav__dropdown-menu {
@@ -257,10 +283,15 @@
         }
 
         .c-nav__item {
-            padding: 10px 15px!important;
-            text-align: left;
+            padding: 15px!important;
+            text-align: center;
             border-bottom: 1px solid $border-line;
-            background-color: $white;
+
+            @include lg {
+                padding: 10px 15px!important;
+                text-align: left;
+                background-color: $white;
+            }
         }
     }
   
