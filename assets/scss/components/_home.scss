@@ -76,7 +76,11 @@
     }
 
     &__services-heading{
-        padding-right:70px;
+        padding-right:0px;
+
+        @include md {
+            padding-right:70px;
+        }
     }
 
     &__works{
