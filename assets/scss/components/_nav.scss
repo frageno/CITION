@@ -251,6 +251,21 @@
         align-items:center;
         justify-content: center;
 
+        @include lg {
+            &:hover {
+                .c-nav__dropdown-menu {
+                    z-index: 99999!important;
+                    opacity: 1!important;
+                    transform: translateY(0)!important;
+                }
+                &::after{
+                    transform: rotate(180deg);
+                    background: url(../img/icons/down-arrow-hover.svg);
+                }
+    
+            }
+        }
+
         &::after {
             content: '';
             background: url(../img/icons/down-arrow-white.svg);
@@ -269,19 +284,6 @@
             }
         }
         
-
-        // &:hover {
-        //     .c-nav__dropdown-menu {
-        //         z-index: 99999!important;
-        //         opacity: 1!important;
-        //         transform: translateY(0)!important;
-        //     }
-        //     &::after{
-        //         transform: rotate(180deg);
-        //         background: url(../img/icons/down-arrow-hover.svg);
-        //     }
-
-        // }
 
 
         .c-nav__item {
