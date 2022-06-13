@@ -1,17 +1,24 @@
 .c-slider{
     background: url(../img/slide.jpg) center center no-repeat;
-    min-height: 800px;
+    min-height: 560px;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 65%);
     position: relative;
+    
+    .container {
+        padding: 0;
+    }
 
+    @include lg {
+        min-height: 800px;
+    }
 
     &__heading {
         color:$white;
-        line-height: 48px;
-        font-size: 32px;
+        line-height: 32px;
+        font-size: 28px;
         padding-bottom: 25px;
 
         @include md {
