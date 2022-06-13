@@ -84,13 +84,13 @@ function browsersyncReload(cb){
 function watchTask() {
     watch('*.html', browsersyncReload)
     watch('assets/scss/**/*.scss', series(compilescss, browsersyncReload));
-    watch('assets/js/**/*.js', series(jsmin, browsersyncReload));
+    // watch('assets/js/**/*.js', series(jsmin, browsersyncReload));
     watch('assets/img/**/*.{jpg,png,svg,gif}', optimizeimg);
 }
 
 exports.default = series(
     compilescss,
-    jsmin,
+    // jsmin,
     optimizeimg,
     browserSyncServe,
     watchTask
