@@ -234,7 +234,7 @@
         background-color: $white;
         min-width: 100%;
         box-shadow: $shadow-primary;
-        z-index: 99999!important;
+        z-index: -1!important;
         padding: 0!important;
         top:100%;
         transition: all .4s ease-in-out;
